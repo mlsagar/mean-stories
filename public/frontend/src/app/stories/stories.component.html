@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="let story of stories">
+        <a routerLink="/story/{{story._id}}">{{story.title}} - {{story.container.name}} - {{story.topic.name}}</a>
+    </li>
+</ul>

@@ -1,0 +1,12 @@
+<div *ngIf="story">
+    <h4>Title: {{story.title}}</h4>
+    <h4>container: {{story.container.name}}</h4>
+    <h4>topic: {{story.topic.name}}</h4>
+    <h4>media: {{story.media}}</h4>
+    <h4>comments: {{story.comments}}</h4>
+    <h4>description: {{story.description}}</h4>
+    <h4>status: {{story.status}}</h4>
+    <h4>user: {{story.user.name}}</h4>
+    <button type="button" (click)="toggleStatus(story.status)">Toggle Status</button>
+    <button (click)="back()" type="button">Back</button>
+</div>
